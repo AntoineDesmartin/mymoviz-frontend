@@ -16,7 +16,7 @@ function Home() {
   //   afin de remplacer le tableau d’objet moviesData
   //    par les données renvoyées par l’API. 
   useEffect(() => {
-    fetch("https://mymoviz-backend-virid.vercel.app/movie").then(res => res.json()).then(data =>{
+    fetch("https://mymoviz-backend-virid.vercel.app/movies").then(res => res.json()).then(data =>{
       // console.log('data' ,data);
       setMoviesDat(data)
     })
