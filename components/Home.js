@@ -18,7 +18,7 @@ function Home() {
   useEffect(() => {
     fetch("https://mymoviz-backend-virid.vercel.app/movies").then(res => res.json()).then(data =>{
       // console.log('data' ,data);
-      setMoviesDat(data)
+      setMoviesDat(data.movies)
     })
   }, []);
   
